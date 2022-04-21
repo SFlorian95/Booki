@@ -1,0 +1,21 @@
+@media screen and (max-width: 992px) {
+
+    article:first-child h2 {
+        text-align: center;
+    }
+
+    div.popular-title {
+        justify-content: center;
+    }
+
+    article section.popular {
+       width: max-content;
+       height: max-content;
+    }
+
+    article section.popular div.card {
+        height: 200px;
+    }
+
+
+}

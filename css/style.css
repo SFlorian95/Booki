@@ -16,16 +16,19 @@ header  .navbar {
 
 .tabs {
    margin: 1rem;
+   height: 40px;
 }
 
 .tabs a {
  margin: 10px;
  text-decoration: none;
  color: black;
+ padding: 14px;
 }
 
 .tabs a:hover {
-    color: rgb(0, 46, 250);  
+    color: rgb(0, 46, 250);
+    border-top: solid 2px rgb(0, 46, 250);  
 }
 
 header section { 
@@ -72,17 +75,17 @@ header section {
     padding: 10px;
 }
 
-header section:last-child {
+header section.all-filter {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
 }
 
-header section:last-child h5 {
+header section.all-filter h5 {
     margin-right: 20px;
 }
 
-header section:last-child div.filter {
+header section.all-filter div.filter {
     display: flex;
     align-items: center;
     margin-right: 3rem;
@@ -107,7 +110,7 @@ header section:last-child div.filter {
     text-transform: capitalize;
 }
 
-header section:last-child div.filter-btn {
+header section.all-filter div.filter-btn {
     border: solid rgb(209, 209, 209) 2px;
     z-index: -1;
     padding: 8px;
@@ -254,7 +257,6 @@ article section.popular div.card {
     display: flex;
     background-color: rgb(251, 251, 251);
     border-radius: 20px;
-    
     width: 90%;
     height: 130px;
     margin: 1rem;
@@ -360,7 +362,7 @@ section.activity div a:hover {
 .item4 img {
     object-fit: cover;
     width: 100%;
-    height: 89%;
+    height: 85%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -377,7 +379,7 @@ section.activity div a:hover {
 .item5 img {
     object-fit: cover;
     width: 100%;
-    height: 70%;
+    height: 65%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
