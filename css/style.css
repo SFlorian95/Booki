@@ -160,6 +160,15 @@ article {
     padding: 1rem;
 }
 
+article div.card a {
+    text-decoration: none;
+    color: black;
+}
+
+div.card a:hover {
+    color: rgb(0, 46, 250);
+}
+
 article:first-child {
     flex: 3  2 800px;
 }
@@ -236,18 +245,32 @@ article section.popular {
     align-items: center;
 }
 
+div.popular-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 article section.popular div.card {
     display: flex;
     background-color: rgb(251, 251, 251);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px grey;
     width: 90%;
-    margin: 20px;
+    height: 130px;
+    margin: 1rem;
+    padding: 3px 3px 3px 3px;
 }
 
 article section.popular div.card img {
-    width: 50%;
-    border-top-left-radius: 10px;
+    object-fit: cover;
+    width: 40%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+article section.popular div.card-price {
+    padding-bottom: 20px;
 }
 
 /**************/
