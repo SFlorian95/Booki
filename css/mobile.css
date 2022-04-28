@@ -1,0 +1,97 @@
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav.navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+    }
+
+    .tabs a {
+        border-bottom: solid 2px rgb(219, 219, 219);
+    }
+    
+    .tabs a:hover {
+        border-top: none;
+        border-bottom: solid 2px blue;
+    }
+    .searchbar input.search-btn {
+        display: none;
+    }
+
+    .search-btn-icon {
+        display: block;
+    }
+
+    article:nth-child(2) {
+        order: -1;
+        margin-left: 0px;
+        margin-right: -1px;
+        border-radius: 0;
+    }
+
+    .mobile-icon i:first-child {
+        display: none;
+    }
+
+    .mobile-icon i:last-child {
+        display: block;
+        margin-left: 2rem;
+    }
+
+    article section.popular div.card {
+        width: 325px;
+        min-width: auto;
+        height: 150px;
+    }
+
+    article:first-child {
+        background-color: white;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article:first-child h2{
+        margin-left: 0px;
+    }
+
+    article:first-child section.hotel {
+        flex-direction: column;
+    }
+
+    article:first-child section.hotel div.card {
+        width: 350px;
+    }
+
+    article:first-child div.display-more {
+        margin-right: 250px;
+    }
+
+    article:last-child section.activity {
+        flex-flow: column nowrap;
+        height: auto;
+        
+    }
+
+    article:last-child section.activity div {
+        width: 350px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    article:last-child section.activity div img {
+        height: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

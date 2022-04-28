@@ -4,6 +4,13 @@
         text-align: center;
     }
 
+    article:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     div.popular-title {
         justify-content: center;
     }
@@ -14,7 +21,21 @@
     }
 
     article section.popular div.card {
+        min-width: 800px;
         height: 200px;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    footer section {
+        padding: 10px;
+        margin: 0;
+    }
+
+    footer section:nth-child(2) {
+        margin-right: 30px;
     }
 
 

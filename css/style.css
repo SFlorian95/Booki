@@ -14,6 +14,10 @@ header  .navbar {
     flex-grow: 2;
 }
 
+.logo img {
+    width: 120px;
+}
+
 .tabs {
    margin: 1rem;
    height: 40px;
@@ -66,13 +70,23 @@ header section {
     padding: 10px;
 }
 
-.searchbar input:last-child {
+.searchbar input.search-btn {
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: azure;
     background-color: rgb(4, 74, 252);
     padding: 10px;
+}
+
+.search-btn-icon {
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: azure;
+    background-color: rgb(4, 74, 252);
+    padding: 10px;
+    display: none;
 }
 
 header section.all-filter {
@@ -189,7 +203,7 @@ article section.hotel {
 article section.hotel div.card {
     background-color: rgb(251, 251, 251);
     border-radius: 20px;
-    box-shadow: 0 2px 4px grey;
+    box-shadow: 0 2px 4px rgb(180, 180, 180);
     margin: 10px;
     width: 30%;
     height: 190px;
@@ -251,6 +265,10 @@ div.popular-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.mobile-icon i:last-child {
+    display: none;
 }
 
 article section.popular div.card {
@@ -379,7 +397,7 @@ section.activity div a:hover {
 .item5 img {
     object-fit: cover;
     width: 100%;
-    height: 65%;
+    height: 75%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
