@@ -37,6 +37,21 @@
         display: block;
     }
 
+    section.all-filter h5 {
+        flex: 100%;
+    }
+
+    section.all-filter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.filter {
+        display: flex;
+        flex-direction: row;
+        padding: 10px
+    }
+
     article:nth-child(2) {
         order: -1;
         margin-left: 0px;
