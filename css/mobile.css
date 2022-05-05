@@ -66,7 +66,7 @@
         margin-left: 0px;
         margin-right: -1px;
         border-radius: 0;
-        width: 2000px;
+        width: 100%;
     }
 
     .mobile-icon i:first-child {
@@ -109,7 +109,7 @@
         margin-right: 250px;
     }
 
-    article.activity-part section.activity {
+    .activity-part section.activity {
         flex-flow: column nowrap;
         height: auto;
     }
@@ -119,13 +119,13 @@
         margin-bottom: 40px;
     }
 
-    article.activity-part section.activity div {
+    .activity-part section.activity div {
         width: 350px;
         height: 200px;
         margin-bottom: 40px;
     }
 
-    article.activity-part section.activity div img {
+    .activity-part section.activity div img {
         height: 80%;
     }
 

@@ -1,5 +1,16 @@
 @media screen and (max-width: 992px) {
 
+    section.hotel-popular {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    article.hotel-part {
+        width: auto;
+        height: auto;
+    }
+
     article.hotel-part h2 {
         text-align: center;
     }
@@ -9,6 +20,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    article.popular-part {
+        order: -1;
+        margin-left: 0px;
+        margin-right: -1px;
+        border-radius: 0;
+        width: 100%;
     }
 
     div.popular-title {
@@ -21,7 +40,7 @@
     }
 
     article section.popular div.card {
-        min-width: 800px;
+        width: 900px;
         height: 200px;
     }
 
