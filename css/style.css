@@ -138,7 +138,6 @@ div.filter-btn button {
     margin: 2rem;
     display: flex;
     align-items: center;
-    color: grey;
 }
 
 .info i {
@@ -180,6 +179,17 @@ article {
 article div.card a {
     text-decoration: none;
     color: black;
+}
+
+.card {
+    cursor: pointer;
+    transition: transform .5s;
+}
+.card:hover {
+    color: #0065FC;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 div.card a:hover {
@@ -240,10 +250,6 @@ div.card div.card-container div {
     font-weight: bold;
 }
 
-.card-price {
-    color: rgb(155, 154, 154);
-}
-
 .card-rated {
     font-size: 12px;
 }
@@ -277,8 +283,12 @@ div.popular-title {
     justify-content: space-between;
 }
 
-.mobile-icon i:last-child {
+.mobile-icon i:first-child {
     display: none;
+}
+
+.mobile-icon i:last-child {
+    display: block;
 }
 
 article section.popular div.card {
@@ -307,6 +317,10 @@ article section.popular div.card-price {
 
 .activity-part {
     background-color: white;
+}
+
+.activity-part h2 {
+    margin: 2%;
 }
 
 section.activity div a {
@@ -351,7 +365,6 @@ section.activity .card:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto;
 }
 
 .big-card img {
@@ -367,7 +380,6 @@ section.activity .card:hover {
 .big-card span {
     height: 70px;
     padding: 15px;
-    margin: auto;
     font-weight: bold;
 }
 
