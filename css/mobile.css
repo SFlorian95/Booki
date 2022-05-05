@@ -37,6 +37,10 @@
         display: block;
     }
 
+    main {
+        height: auto;
+    }
+
     section.all-filter h5 {
         flex: 100%;
     }
@@ -52,11 +56,17 @@
         padding: 10px
     }
 
-    article:nth-child(2) {
+    section.hotel-popular {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.popular-part {
         order: -1;
         margin-left: 0px;
         margin-right: -1px;
         border-radius: 0;
+        width: 2000px;
     }
 
     .mobile-icon i:first-child {
@@ -74,7 +84,7 @@
         height: 150px;
     }
 
-    article:first-child {
+    article.hotel-part {
         background-color: white;
         margin-left: 0px;
         margin-right: 0px;
@@ -83,35 +93,39 @@
         align-items: center;
     }
 
-    article:first-child h2{
+    article.hotel-part h2{
         margin-left: 0px;
     }
 
-    article:first-child section.hotel {
+    article.hotel-part section.hotel {
         flex-direction: column;
     }
 
-    article:first-child section.hotel div.card {
+    article.hotel-part section.hotel div.card {
         width: 350px;
     }
 
-    article:first-child div.display-more {
+    article.hotel-part div.display-more {
         margin-right: 250px;
     }
 
-    article:last-child section.activity {
+    article.activity-part section.activity {
         flex-flow: column nowrap;
         height: auto;
-        
     }
 
-    article:last-child section.activity div {
+    .activity-part h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    article.activity-part section.activity div {
         width: 350px;
         height: 200px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
-    article:last-child section.activity div img {
+    article.activity-part section.activity div img {
         height: 80%;
     }
 

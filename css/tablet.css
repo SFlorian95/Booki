@@ -1,10 +1,10 @@
 @media screen and (max-width: 992px) {
 
-    article:first-child h2 {
+    article.hotel-part h2 {
         text-align: center;
     }
 
-    article:nth-child(2) {
+    article.popular-part {
         display: flex;
         flex-direction: column;
         align-items: center;
