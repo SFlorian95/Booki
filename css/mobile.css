@@ -158,6 +158,7 @@
 
     .activity-part section.activity {
         flex-flow: column nowrap;
+        align-items: center;
         height: auto;
     }
 
