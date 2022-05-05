@@ -61,6 +61,15 @@
         align-items: center;
     }
 
+    .hotel-part {
+        width: unset;
+    }
+
+    .hotel-part h2 {
+        width: 100%;
+        text-align: left;
+    }
+
     article.popular-part {
         order: -1;
         margin-left: 0px;
@@ -131,5 +140,6 @@
 
     footer {
         flex-direction: column;
+        margin-top: 200px;
     }
 }

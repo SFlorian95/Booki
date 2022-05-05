@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*           HEADER             */
@@ -255,6 +254,10 @@ div.card div.card-container div {
     color: rgb(155, 154, 154);
 }
 
+.card-rated {
+    font-size: 12px;
+}
+
 .card-rated i{
     color: blue;
 }
@@ -374,6 +377,7 @@ section.activity .card:hover {
     height: 70px;
     padding: 15px;
     margin: auto;
+    font-weight: bold;
 }
 
 .big-card .card {
@@ -389,7 +393,7 @@ section.activity .card:hover {
 
 .small-card span {
     height: 70px;
-   margin: auto;
+    font-weight: bold;
 }
 
 
