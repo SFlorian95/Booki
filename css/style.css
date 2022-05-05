@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*           HEADER             */
@@ -14,32 +14,34 @@ header  .navbar {
     flex-grow: 2;
 }
 
+.logo img {
+    width: 120px;
+}
+
 .tabs {
    margin: 1rem;
+   height: 40px;
 }
 
 .tabs a {
  margin: 10px;
  text-decoration: none;
  color: black;
+ padding: 14px;
 }
 
-.tabs a:hover {
-    color: rgb(0, 46, 250);  
+.tabs a:hover, .tabs a.active {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;  
 }
 
-header section { 
-    margin-left: 2rem;  
+header section {
+    margin-left: 2%;
 }
 
 .intro {
     font-weight: bold;
     font-size: large;
-}
-
-.subtext {
-    font-style: italic;
-    color: grey;
 }
 
 .searchbar form {
@@ -50,7 +52,7 @@ header section {
 }
 
 .searchbar label {
-    background-color: rgb(238, 238, 238);
+    background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 15px;  
@@ -63,55 +65,68 @@ header section {
     padding: 10px;
 }
 
-.searchbar input:last-child {
+.searchbar input.search-btn {
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: azure;
-    background-color: rgb(4, 74, 252);
+    background-color:#0065FC;
     padding: 10px;
 }
 
-header section:last-child {
+.search-btn-icon {
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: azure;
+    background-color: #0065FC;
+    padding: 10px;
+    display: none;
+}
+
+header section.all-filter {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+    margin-left: 2%;
 }
 
-header section:last-child h5 {
+header section.all-filter h4 {
     margin-right: 20px;
 }
 
-header section:last-child div.filter {
+header section.all-filter div.filter {
     display: flex;
+    flex-direction: row;
+    padding: 10px;
     align-items: center;
     margin-right: 3rem;
 }
 
 .filter-icon {
-    background-color: rgb(190, 223, 249);
+    background-color: #DEEBFF;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    margin-right: -30px;
+    margin-right: -40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .filter-icon i {
-    color: blue;
+    color: #0065FC;
 }
 
 .uppercase {
     text-transform: capitalize;
 }
 
-header section:last-child div.filter-btn {
-    border: solid rgb(209, 209, 209) 2px;
+header section.all-filter div.filter-btn {
+    border: solid #F2F2F2 2px;
     z-index: -1;
     padding: 8px;
-    padding-left: 35px;
+    padding-left: 45px;
     padding-right: 20px;
     border-radius: 30px;
 }
@@ -128,7 +143,6 @@ div.filter-btn button {
     margin: 2rem;
     display: flex;
     align-items: center;
-    color: grey;
 }
 
 .info i {
@@ -136,23 +150,31 @@ div.filter-btn button {
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
-    border: solid rgb(209, 209, 209) 2px;
+    border: solid #F2F2F2 2px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    color: blue;
+    color: #0065FC;
 }
 
 /*           MAIN             */
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 article {
-    background-color: rgb(238, 238, 238);
+    width: 96%;
+}
+
+.hotel-popular {
+    display: flex;
+}
+
+article {
+    background-color: #F2F2F2;
     border-radius: 20px;  
     flex: 3 320px;
     margin: 20px;
@@ -164,12 +186,28 @@ article div.card a {
     color: black;
 }
 
-div.card a:hover {
-    color: rgb(0, 46, 250);
+.card {
+    cursor: pointer;
+    transition: transform .5s;
+}
+.card:hover {
+    color: #0065FC;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-article:first-child {
+div.card a:hover {
+    color: #0065FC;
+}
+
+article.hotel-part {
     flex: 3  2 800px;
+    width: 66%;
+}
+
+article.popular-part {
+    width: 32%;
 }
 
 article h2 {
@@ -186,10 +224,11 @@ article section.hotel {
 article section.hotel div.card {
     background-color: rgb(251, 251, 251);
     border-radius: 20px;
-    box-shadow: 0 2px 4px grey;
+    box-shadow: 6px 6px 15px rgb(214, 213, 213);
     margin: 10px;
     width: 30%;
     height: 190px;
+    min-width: 220px;
     min-height: fit-content;
     padding: 5px 5px 15px 5px;
 }
@@ -217,12 +256,12 @@ div.card div.card-container div {
     font-weight: bold;
 }
 
-.card-price {
-    color: rgb(155, 154, 154);
+.card-rated {
+    font-size: 12px;
 }
 
 .card-rated i{
-    color: blue;
+    color: #0065FC;
 }
 .card-rated i:last-child{
     color: grey;
@@ -250,11 +289,19 @@ div.popular-title {
     justify-content: space-between;
 }
 
+.mobile-icon i:first-child {
+    display: none;
+}
+
+.mobile-icon i:last-child {
+    display: block;
+}
+
 article section.popular div.card {
     display: flex;
     background-color: rgb(251, 251, 251);
+    box-shadow: 6px 6px 15px rgb(214, 213, 213);
     border-radius: 20px;
-    
     width: 90%;
     height: 130px;
     margin: 1rem;
@@ -274,21 +321,12 @@ article section.popular div.card-price {
 
 /**************/
 
-article:last-child  {
+.activity-part {
     background-color: white;
 }
 
-article:last-child section.activity {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    height: 400px;
-    margin-bottom: 3rem;
-}
-
-article:last-child section.activity div.container {
-    font-weight: bold;
-    margin: 10px;
+.activity-part h2 {
+    margin-left: 2%;
 }
 
 section.activity div a {
@@ -297,105 +335,74 @@ section.activity div a {
 }
 
 section.activity div a:hover {
-    color: blue;
+    color: #0065FC;
 }
 
-.item1 {
-    background-color: rgb(251, 251, 251);
-    height: 100%;
-    width: 20%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgb(197, 197, 197);
-}
-
-.item1 img {
-    object-fit: cover;
+.activity {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
     width: 100%;
-    height: 89%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    padding: 0 0 30px 0;
 }
 
-.item2 {
-    background-color: rgb(251, 251, 251);
-    height: 55%;
+.activity h1 {
+    flex: 100%;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+section.activity .card {
+    display: flex;
+    box-shadow: 6px 6px 15px rgb(214, 213, 213);
+    border-radius: 16px;
+    background-color: white;
+}
+
+section.activity .card:hover {
+    color: #0065FC;
+}
+
+.big-card {
     width: 20%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgb(197, 197, 197);
-    margin-bottom: 3%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.item2 img {
+.big-card img {
+    height: 370px;
     object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.small-card img {
+    height: 130px;
+}
+
+.big-card span {
+    height: 70px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.big-card .card {
+    margin: unset;
+}
+
+.small-card {
     width: 100%;
-    height: 80%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
-.item3 {
-    background-color: rgb(251, 251, 251);
-    height: 35%;
-    width: 20%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgb(197, 197, 197);
-}
-
-.item3 img {
-    object-fit: cover;
-    width: 100%;
-    height: 70%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.item4 {
-    background-color: rgb(251, 251, 251);
-    height: 100%;
-    width: 20%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgb(197, 197, 197);
-}
-
-.item4 img {
-    object-fit: cover;
-    width: 100%;
-    height: 89%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.item5 {
-    background-color: rgb(251, 251, 251);
-    height: 40%;
-    width: 20%;
-    margin-bottom: 3%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgb(197, 197, 197);
-}
-
-.item5 img {
-    object-fit: cover;
-    width: 100%;
-    height: 70%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.item6 {
-    background-color: rgb(251, 251, 251);
-    height: 50%;
-    width: 20%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgb(197, 197, 197);
-}
-
-.item6 img {
-    object-fit: cover;
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.small-card span {
+    height: 70px;
+    font-weight: bold;
 }
 
 
@@ -403,7 +410,7 @@ section.activity div a:hover {
 
 footer {
     display: flex;
-    background-color: rgb(237, 234, 234);
+    background-color: #F2F2F2;
     padding-bottom: 40px;
 }
 
@@ -423,5 +430,5 @@ footer section div a {
 }
 
 footer section div a:hover {
-    color: blue;
+    color: #0065FC;
 }
