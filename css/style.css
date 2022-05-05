@@ -35,6 +35,10 @@ header  .navbar {
     border-top: solid 2px #0065FC;  
 }
 
+header section {
+    margin-left: 2%;
+}
+
 .intro {
     font-weight: bold;
     font-size: large;
@@ -84,6 +88,7 @@ header section.all-filter {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+    margin-left: 2%;
 }
 
 header section.all-filter h4 {
@@ -223,6 +228,7 @@ article section.hotel div.card {
     margin: 10px;
     width: 30%;
     height: 190px;
+    min-width: 220px;
     min-height: fit-content;
     padding: 5px 5px 15px 5px;
 }
@@ -320,7 +326,7 @@ article section.popular div.card-price {
 }
 
 .activity-part h2 {
-    margin: 2%;
+    margin-left: 2%;
 }
 
 section.activity div a {
@@ -334,7 +340,7 @@ section.activity div a:hover {
 
 .activity {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 10px;
     flex-wrap: wrap;
     padding-bottom: 30px;
