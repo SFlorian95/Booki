@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    src: url(../assets/fonts/Raleway-Bold.ttf);
+    src: url(assets/fonts/Raleway-Bold.ttf);
     font-family: 'RalewayBold';
     font-style: normal;
 }
@@ -33,7 +33,7 @@ a {
     color: black;
 }
 
-h1, h2 {
+h1 {
     font-size: 22px;
     font-family: 'RalewaySemiBold', sans-serif;
 }

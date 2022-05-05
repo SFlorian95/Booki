@@ -15,14 +15,16 @@
     header section {
         margin-left: unset;
         padding: 20px;
+        width: 100%;
     }
 
     .intro {
-        font-family: 'RalewayBold';
+        font-weight: bold;
+        font-family: 'RalewaySemiBold', sans-serif;
         font-size: 22px;
     }
 
-    form {
+    .searchbar form {
         right: unset;
         margin-left: unset;
     }
@@ -54,6 +56,11 @@
 
     .search-btn-icon {
         display: block;
+    }
+
+    div.info {
+        margin: unset;
+        padding: 20px;
     }
 
     main {

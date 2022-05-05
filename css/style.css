@@ -30,15 +30,9 @@ header  .navbar {
  padding: 14px;
 }
 
-
-
 .tabs a:hover, .tabs a.active {
     color: #0065FC;
     border-top: solid 2px #0065FC;  
-}
-
-header section { 
-    margin-left: 2rem;  
 }
 
 .intro {
@@ -215,7 +209,7 @@ article section.hotel {
 article section.hotel div.card {
     background-color: rgb(251, 251, 251);
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgb(180, 180, 180);
+    box-shadow: 6px 6px 15px rgb(214, 213, 213);
     margin: 10px;
     width: 30%;
     height: 190px;
@@ -290,6 +284,7 @@ div.popular-title {
 article section.popular div.card {
     display: flex;
     background-color: rgb(251, 251, 251);
+    box-shadow: 6px 6px 15px rgb(214, 213, 213);
     border-radius: 20px;
     width: 90%;
     height: 130px;
