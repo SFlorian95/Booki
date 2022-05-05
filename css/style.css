@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*           HEADER             */
@@ -31,9 +32,9 @@ header  .navbar {
 
 
 
-.tabs a:hover {
-    color: rgb(0, 46, 250);
-    border-top: solid 2px rgb(0, 46, 250);  
+.tabs a:hover, .tabs a.active {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;  
 }
 
 header section { 
@@ -45,11 +46,6 @@ header section {
     font-size: large;
 }
 
-.subtext {
-    font-style: italic;
-    color: grey;
-}
-
 .searchbar form {
     display: flex;
     position: relative;
@@ -58,7 +54,7 @@ header section {
 }
 
 .searchbar label {
-    background-color: rgb(238, 238, 238);
+    background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 15px;  
@@ -76,7 +72,7 @@ header section {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: azure;
-    background-color: rgb(4, 74, 252);
+    background-color:#0065FC;
     padding: 10px;
 }
 
@@ -85,7 +81,7 @@ header section {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: azure;
-    background-color: rgb(4, 74, 252);
+    background-color: #0065FC;
     padding: 10px;
     display: none;
 }
@@ -96,7 +92,7 @@ header section.all-filter {
     margin: 1rem;
 }
 
-header section.all-filter h5 {
+header section.all-filter h4 {
     margin-right: 20px;
 }
 
@@ -109,7 +105,7 @@ header section.all-filter div.filter {
 }
 
 .filter-icon {
-    background-color: rgb(190, 223, 249);
+    background-color: #DEEBFF;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -120,7 +116,7 @@ header section.all-filter div.filter {
 }
 
 .filter-icon i {
-    color: blue;
+    color: #0065FC;
 }
 
 .uppercase {
@@ -128,7 +124,7 @@ header section.all-filter div.filter {
 }
 
 header section.all-filter div.filter-btn {
-    border: solid rgb(209, 209, 209) 2px;
+    border: solid #F2F2F2 2px;
     z-index: -1;
     padding: 8px;
     padding-left: 45px;
@@ -156,11 +152,11 @@ div.filter-btn button {
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
-    border: solid rgb(209, 209, 209) 2px;
+    border: solid #F2F2F2 2px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    color: blue;
+    color: #0065FC;
 }
 
 /*           MAIN             */
@@ -180,7 +176,7 @@ article {
 }
 
 article {
-    background-color: rgb(238, 238, 238);
+    background-color: #F2F2F2;
     border-radius: 20px;  
     flex: 3 320px;
     margin: 20px;
@@ -193,7 +189,7 @@ article div.card a {
 }
 
 div.card a:hover {
-    color: rgb(0, 46, 250);
+    color: #0065FC;
 }
 
 article.hotel-part {
@@ -259,7 +255,7 @@ div.card div.card-container div {
 }
 
 .card-rated i{
-    color: blue;
+    color: #0065FC;
 }
 .card-rated i:last-child{
     color: grey;
@@ -324,7 +320,7 @@ section.activity div a {
 }
 
 section.activity div a:hover {
-    color: blue;
+    color: #0065FC;
 }
 
 .activity {
@@ -351,7 +347,7 @@ section.activity .card {
 }
 
 section.activity .card:hover {
-    color: blue;
+    color: #0065FC;
 }
 
 .big-card {
@@ -401,7 +397,7 @@ section.activity .card:hover {
 
 footer {
     display: flex;
-    background-color: rgb(237, 234, 234);
+    background-color: #F2F2F2;
     padding-bottom: 40px;
 }
 
@@ -421,5 +417,5 @@ footer section div a {
 }
 
 footer section div a:hover {
-    color: blue;
+    color: #0065FC;
 }

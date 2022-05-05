@@ -12,6 +12,25 @@
         width: 100%;
     }
 
+    header section {
+        margin-left: unset;
+        padding: 20px;
+    }
+
+    .intro {
+        font-family: 'RalewayBold';
+        font-size: 22px;
+    }
+
+    form {
+        right: unset;
+        margin-left: unset;
+    }
+
+    .searchbar input {
+        flex: 1;
+    }
+
     .tabs {
         width: 100%;
         display: flex;
@@ -25,7 +44,7 @@
         text-align: center;
     }
     
-    .tabs a:hover {
+    .tabs a:hover, .tabs a.active {
         border-top: none;
         border-bottom: solid 2px blue;
     }

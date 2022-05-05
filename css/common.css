@@ -1,13 +1,13 @@
 /* Common style */
 
 @font-face {
-    src: url(../assets/fonts/Raleway-Regular.ttf);
+    src: url(../assets/fonts/Raleway-Black.ttf);
     font-family: 'Raleway';
     font-style: normal;
 }
 
 @font-face {
-    src: url(../assets/fonts/Raleway-Light.ttf);
+    src: url(assets/fonts/Raleway-Light.ttf);
     font-family: 'RalewayLight';
     font-style: normal;
 }
@@ -33,7 +33,7 @@ a {
     color: black;
 }
 
-h1 {
+h1, h2 {
     font-size: 22px;
     font-family: 'RalewaySemiBold', sans-serif;
 }
