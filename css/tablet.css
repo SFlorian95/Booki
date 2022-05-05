@@ -1,0 +1,69 @@
+@media screen and (max-width: 992px) {
+
+    section.hotel-popular {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    article.hotel-part {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        flex: unset;
+        margin-bottom: 40px;
+    }
+
+    article.hotel-part h2 {
+        text-align: center;
+    }
+
+    article.popular-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article.popular-part {
+        order: -1;
+        margin-left: 0px;
+        margin-right: -1px;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    div.popular-title {
+        justify-content: center;
+    }
+
+    article section.popular {
+       width: max-content;
+       height: max-content;
+       padding-bottom: 40px;
+    }
+
+    article section.popular div.card {
+        width: 500px;
+        height: 200px;
+    }
+
+    .activity-part h2 {
+        text-align: center;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    footer section {
+        padding: 10px;
+        margin: 0;
+    }
+
+    footer section:nth-child(2) {
+        margin-right: 30px;
+    }
+
+
+}
