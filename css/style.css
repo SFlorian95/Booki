@@ -65,7 +65,7 @@ header section {
     padding: 10px;
 }
 
-.searchbar input.search-btn {
+.searchbar .search-btn {
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -74,13 +74,7 @@ header section {
     padding: 10px;
 }
 
-.search-btn-icon {
-    border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: azure;
-    background-color: #0065FC;
-    padding: 10px;
+.search-btn i {
     display: none;
 }
 
@@ -165,10 +159,6 @@ main {
     justify-content: space-around;
 }
 
-article {
-    width: 96%;
-}
-
 .hotel-popular {
     display: flex;
 }
@@ -176,7 +166,6 @@ article {
 article {
     background-color: #F2F2F2;
     border-radius: 20px;  
-    flex: 3 320px;
     margin: 20px;
     padding: 1rem;
 }
@@ -202,8 +191,7 @@ div.card a:hover {
 }
 
 article.hotel-part {
-    flex: 3  2 800px;
-    width: 66%;
+    width: 73%;
 }
 
 article.popular-part {
@@ -218,7 +206,6 @@ article section.hotel {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px;
 }
 
 article section.hotel div.card {
@@ -228,8 +215,6 @@ article section.hotel div.card {
     margin: 10px;
     width: 30%;
     height: 190px;
-    min-width: 220px;
-    min-height: fit-content;
     padding: 5px 5px 15px 5px;
 }
 
@@ -302,9 +287,11 @@ article section.popular div.card {
     background-color: rgb(251, 251, 251);
     box-shadow: 6px 6px 15px rgb(214, 213, 213);
     border-radius: 20px;
-    width: 90%;
-    height: 130px;
-    margin: 1rem;
+    width: 100%;
+    max-height: 140px;
+    height: auto;
+    min-height: 140px;
+    margin: 2%;
     padding: 5px 20px 5px 5px;
 }
 

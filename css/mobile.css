@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+
     header {
         display: flex;
         flex-direction: column;
@@ -27,6 +28,14 @@
     .searchbar form {
         right: unset;
         margin-left: unset;
+    }
+
+    .search-btn i {
+        display: inline;
+    }
+
+    .search-btn span {
+        display: none;
     }
 
     .searchbar input {
@@ -100,7 +109,7 @@
     article.popular-part {
         order: -1;
         margin-left: 0px;
-        margin-right: -1px;
+        margin-right: 0px;
         border-radius: 0;
         width: 100%;
     }
@@ -136,20 +145,31 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
     }
 
     article.hotel-part h2{
         margin-left: 0px;
         width:100%;
         text-align: left;
+        padding-left: 6%;
     }
 
     article.hotel-part section.hotel {
         flex-direction: column;
+        width: 90%;
+        align-items: center;
     }
 
     article.hotel-part section.hotel div.card {
-        width: 350px;
+        width: 65vw;
+        height: 50vw;
+        margin: unset;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 20px;
     }
 
     article.hotel-part div.display-more {
