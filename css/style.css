@@ -302,6 +302,10 @@ article section.popular div.card img {
     border-bottom-left-radius: 15px;
 }
 
+div.card-container {
+    width: 70%;
+}
+
 article section.popular div.card-price {
     padding-bottom: 20px;
 }
