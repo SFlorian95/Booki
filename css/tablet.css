@@ -18,6 +18,10 @@
         text-align: center;
     }
 
+    .card-title {
+        font-size: unset;
+    }
+
     article.popular-part {
         display: flex;
         flex-direction: column;
